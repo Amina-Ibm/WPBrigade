@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adidas</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="notification">
@@ -15,19 +21,26 @@
       <img class="x-mark" src="images/x-mark.png" />
     </div>
     <div class="header">
-      <img src="images/logo.png" />
-      <div class="parallelogram-btn membership">MEMBERSHIP</div>
-      <div class="parallelogram-btn account">ACCOUNT</div>
+      <img class="logo" src="images/logo.png" />
+      <div class="parallelogram-btn membership"><span>MEMBERSHIP</span></div>
+      <div class="parallelogram-btn account"><span>ACCOUNT</span></div>
+      <img class="burgur-icon" src="images/burger-icon.png" />
     </div>
     <nav>
-      <a href="" class="first-link">OUR TRACKS</a>
-      <a href="">FIND EVENTS</a>
-      <a href="">TRACK MAP</a>
-      <a href="">SHOP</a>
-      <a href="">ABOUT US</a>
+      <div class="links">
+        <a href="" class="first-link">OUR TRACKS</a>
+        <a href="">FIND EVENTS</a>
+        <a href="">TRACK MAP</a>
+        <a href="">SHOP</a>
+        <a href="">ABOUT US</a>
+      </div>
       <div class="input-search">
         <input type="text" placeholder="SEARCH" />
         <img src="images/search-icon.png" alt="search-icon" />
+      </div>
+      <div class="mobile-btns">
+        <div class="membership-btn">MEMBERSHIP</div>
+        <div class="account-btn">ACCOUNT</div>
       </div>
     </nav>
     <section class="partnership">
@@ -35,8 +48,10 @@
         <h2>HOME PAGE</h2>
       </div>
       <div class="partnership-text">
-        <h2>PARTNERSHIP BY</h2>
-        <img src="images/reebok-logo.png" />
+        <div class="partnership-content">
+          <h2>PARTNERSHIP BY</h2>
+          <img src="images/reebok-logo.png" />
+        </div>
       </div>
     </section>
 
@@ -46,13 +61,11 @@
       <div class="mySlides fade">
         <img src="images/hero-bg.png" style="width: 100%" />
       </div>
-
       <div class="mySlides fade">
-        <img src="images/hero-bg.png" style="width: 100%" />
+        <img src="images/hero-bg.png" style="width: 100%;"/>
       </div>
-
       <div class="mySlides fade">
-        <img src="images/hero-bg.png" style="width: 100%" />
+        <img src="images/hero-bg.png" style="width: 100%;" />
       </div>
 
       <a class="prev" onclick="plusSlides(-1)"
@@ -65,9 +78,10 @@
         <span class="line line-1" onclick="currentSlide(1)"></span>
         <span class="line line-2" onclick="currentSlide(2)"></span>
         <span class="line line-3" onclick="currentSlide(3)"></span>
+        <span class="line line-4" onclick="currentSlide(1)"></span>
       </div>
       <div class="text">
-        <h1>GET READY FOR NEW ADIDAS BRANDS</h1>
+        <h1>GET READY FOR NEW ADIDAS BANDS</h1>
         <p>
           Adidas tracks all begin with a starting gate and end with a finish
           line, but everything in between varies from track to track. Because no
@@ -84,16 +98,16 @@
 
     <section class="thumbnail">
       <div class="thumbnail-img">
-        <a target="_blank" href="images/thubnail-slider-img.png">
+        <a class="thumbnail-1" target="_blank" href="images/thubnail-slider-img.png">
           <img src="images/thubnail-slider-img.png" alt="Forest" />
         </a>
-        <a target="_blank" href="images/thubnail-slider-img.png">
+        <a class="thumbnail-2" target="_blank" href="images/thubnail-slider-img.png">
           <img src="images/thubnail-slider-img.png" alt="Forest" />
         </a>
-        <a target="_blank" href="images/thubnail-slider-img.png">
+        <a class="thumbnail-3" target="_blank" href="images/thubnail-slider-img.png">
           <img src="images/thubnail-slider-img.png" alt="Forest" />
         </a>
-        <a target="_blank" href="images/thubnail-slider-img.png">
+        <a class="thumbnail-4" target="_blank" href="images/thubnail-slider-img.png">
           <img src="images/thubnail-slider-img.png" alt="Forest" />
         </a>
       </div>
@@ -104,8 +118,14 @@
         <span class="line line-1"></span>
         <span class="line line-2"></span>
         <span class="line line-3"></span>
+        <span class="line line-4"></span>
+        <span class="line line-5"></span>
+        <span class="line line-6"></span>
+        <span class="line line-7"></span>
       </div>
+      <hr>
     </section>
+    
 
     <!-- Events -->
     <section class="event">
@@ -117,7 +137,7 @@
           <span class="number-square">1</span>
           <div class="event-detail">
             <span class="show-name">SHOW IN USA</span>
-            <br>
+            <br />
             <span class="show-country">USA</span>
           </div>
         </div>
@@ -125,7 +145,7 @@
           <span class="number-square">2</span>
           <div class="event-detail">
             <span class="show-name">ADIDAS SHOW IN USA</span>
-            <br>
+            <br />
             <span class="show-country">USA</span>
           </div>
         </div>
@@ -134,7 +154,7 @@
           <span class="number-square">3</span>
           <div class="event-detail">
             <span class="show-name">ADIDAS SHOW</span>
-            <br>
+            <br />
             <span class="show-country">USA</span>
           </div>
         </div>
@@ -142,35 +162,174 @@
           <span class="number-square">4</span>
           <div class="event-detail">
             <span class="show-name">ADIDAS IN USA</span>
-            <br>
+            <br />
             <span class="show-country">USA</span>
           </div>
         </div>
       </div>
     </section>
-    <hr>
+    <!-- <hr> -->
     <section class="post-section">
-      <div class="post">
-        <img src="/images/post-img.png">
+      <div class="post post-1">
+        <img src="/images/post-img.png" />
         <h1>2019 NATIONAL CHAMPIONS CROWNED AT REEBOX</h1>
-        <p>Membership has its perks. Joining ADIDAS means you can
-           race at your local tracks.</p>
-        <p><button>READ MORE</button></p>
+        <p>
+          Membership has its perks. Joining ADIDAS means you can race at your
+          local tracks.
+        </p>
+        <button>READ MORE</button>
       </div>
-      <div class="post">
-        <img src="/images/post-img.png">
+      <div class="post post-2">
+        <img src="/images/post-img.png" />
         <h1>2019 NATIONAL CHAMPIONS</h1>
         <p>Membership has its perks.</p>
-        <p><button>READ MORE</button></p>
+        <footer><button>READ MORE</button></footer>
       </div>
-      <div class="post">
-        <img src="/images/post-img.png">
+      <div class="post post-3">
+        <img src="/images/post-img.png" />
         <h1>2019 NATIONAL CHAMPIONS CROWNED AT REEBOX</h1>
-        <p>Membership has its perks. Joining ADIDAS means you can
-           race at your local tracks.</p>
-        <p><button>READ MORE</button></p>
+        <p>
+          Membership has its perks. Joining ADIDAS means you can race at your
+          local tracks.
+        </p>
+        <button>READ MORE</button>
       </div>
+    </section>
+
+    <!-- Zigzag -->
+    <section class="zigzag">
+      <div class="zigzag-1">
+        <div class="img-wrapper-1">
+          <img src="images/zig-zag-img-1.png" />
+        </div>
+
+        <div class="zigzag-text">
+          <h1>2019 NATIONAL CHAMPIONS CROWNED AT REEBOX</h1>
+          <p>
+            Membership has its perks. Joining ADIDAS means you can race at your
+            local tracks.
+          </p>
+        </div>
+      </div>
+      <div class="zigzag-2">
+        <div class="zigzag-text">
+          <h1>2019 NATIONAL CHAMPIONS CROWNED AT REEBOX</h1>
+          <p>
+            Membership has its perks. Joining ADIDAS means you can race at your
+            local tracks.
+          </p>
+        </div>
+        <div class="img-wrapper-2">
+          <img src="images/zig-zag-img-2.png" />
+        </div>
+      </div>
+      <div class="zigzag-1 zigzag-3">
+        <div class="img-wrapper-2">
+          <img src="images/zig-zag-img-2.png" />
+        </div>
+        <div class="zigzag-text">
+          <h1>2019 NATIONAL CHAMPIONS CROWNED AT REEBOX</h1>
+          <p>
+            Membership has its perks. Joining ADIDAS means you can race at your
+            local tracks.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <form>
+        <h1>GET IN TOUCH WITH US</h1>
+        <div class="row row-1">
+          <div>
+            <label for="name">NAME</label>
+            <input
+              type="text"
+              placeholder="enter name"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="country">
+            <label for="state">COUNTRY</label>
+            <select id="state" name="state">
+              <option value="USA" selected>USA</option>
+            </select>
+          </div>
+          <div class="gender-div">
+            <label class="gender">GENDER</label>
+            <div class="radio">
+              <div>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+              </div>
+              <div>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+              </div>
+              <div>
+                <input type="radio" id="other" name="gender" value="other" />
+                <label for="other">Other</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-2">
+          <div>
+            <label for="email">EMAIL</label>
+            <input
+              type="email"
+              placeholder="enter email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="state">
+            <label for="state">STATE</label>
+            <select id="state" name="state">
+              <option value="USA" selected>USA</option>
+            </select>
+          </div>
+        </div>
+        <div class="message">
+          <label for="message">COUNTRY</label>
+          <br />
+          <textarea
+            id="message"
+            placeholder="message"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">SUBMIT</button>
+      </form>
     </section>
     <script src="index.js"></script>
   </body>
+  <footer>
+    <div class="links">
+      <a href="">OUR TRACKS</a>
+      <span>/</span>
+      <a href="">FIND EVENTS</a>
+      <span>/</span>
+      <a href="">TRACK MAP</a>
+      <span>/</span>
+      <a href="">SHOP</a>
+      <span>/</span>
+      <a href="">ABOUT US</a>
+    </div>
+    <div class="icons">
+      <a href=""><img src="images/facebook-icon.png" /></a>
+      <a href=""><img src="images/twitter-icon.png" /></a>
+      <a href=""><img src="images/instagram-icon.png" /></a>
+      <a href=""><img src="images/linkedin-icon.png" /></a>
+    </div>
+    <span id="footer">© copyright 2020 Adidas</span>
+  </footer>
 </html>
