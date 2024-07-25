@@ -29,3 +29,17 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   lines[slideIndex-1].className += " active";
 }
+
+function toggleNav() {
+  const nav = document.getElementById('mobile-nav');
+  if (nav.style.display === "flex") {
+      nav.style.display = "none";
+  } else {
+      nav.style.display = "flex";
+  }
+}
+
+function closeNotification() {
+  const notification = document.querySelector('.notification');
+  notification.style.display = 'none';
+}
