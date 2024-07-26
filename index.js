@@ -1,3 +1,25 @@
+
+function highlightText() {
+  const searchInput = document.getElementById('input-text');
+  const searchValue = searchInput.value.trim();
+  const contentElement = document.body;
+  const highlightedElements = contentElement.querySelectorAll('.highlight');
+
+  // Remove the .highlight class from previous searches
+  highlightedElements.forEach(element => {
+    element.classList.remove('highlight');
+  });
+
+  if (searchValue !== '') {
+    const content = contentElement.innerHTML;
+    const highlightedContent = content.replace(
+      new RegExp(searchValue, 'gi'),
+      '<span class="highlight">$&</span>'
+    );
+    contentElement.innerHTML = highlightedContent;
+  } 
+}
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
